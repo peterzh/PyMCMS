@@ -59,6 +59,14 @@ def get_mouse_names(colony_prefix):
     raise NotImplementedError
 
 
+def create_post_queue():
+    """
+    Queue up entries to be posted to the REST endpoint,
+    and then submit when the endpoint is available
+    """
+    raise NotImplementedError
+
+
 def create_gui():
     """
     Create GUI windows and buttons
