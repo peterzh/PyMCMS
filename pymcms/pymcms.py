@@ -10,9 +10,9 @@ def handle_cli_arguments(args):
 
 def load_config():
     """
-    Parse ../config.yaml file
+    Parse ../config.yml file
     """
-    with open('../config.yaml', 'r') as ymlfile:
+    with open('../config.yml', 'r') as ymlfile:
         cfg = yaml.load(ymlfile, Loader=yaml.SafeLoader)
     return cfg
 
