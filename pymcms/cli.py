@@ -16,6 +16,12 @@ def load_config():
         cfg = yaml.load(ymlfile, Loader=yaml.SafeLoader)
     return cfg
 
+def request_api_key(username, password):
+    """
+    Request daily API key for MCMS access
+    """
+    raise NotImplementedError
+
 
 def create_api_get():
     """
