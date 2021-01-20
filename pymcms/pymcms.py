@@ -17,6 +17,20 @@ def load_config():
     return cfg
 
 
+def create_api_get():
+    """
+    Compile GET url
+    """
+    raise NotImplementedError
+
+
+def create_api_post():
+    """
+    Compile POST
+    """
+    raise NotImplementedError
+
+
 def post_weight(mouse_name, weight, date):
     """
     Post weight to MCMS for a given mouse_name, and date
