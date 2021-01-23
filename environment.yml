@@ -1,0 +1,7 @@
+name: PyMCMS
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+prefix: /opt/homebrew/anaconda3/envs/PyMCMS
