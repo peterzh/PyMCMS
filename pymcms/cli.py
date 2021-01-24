@@ -1,4 +1,15 @@
 import yaml
+import requests
+
+
+def api_get(url):
+    """
+    Use requests package to perform GET
+    """
+    resp = requests.get(url)
+    if resp.status_code != 200:
+        raise ApiError(f'GET {resp.status_code}')
+    return resp.json()
 
 
 def handle_cli_arguments(args):
