@@ -8,7 +8,7 @@ def api_get(url):
     """
     resp = requests.get(url)
     if resp.status_code != 200:
-        raise ApiError(f'GET {resp.status_code}')
+        raise NotImplementedError
     return resp.json()
 
 
@@ -26,6 +26,7 @@ def load_config():
     with open('../config.yml', 'r') as ymlfile:
         cfg = yaml.load(ymlfile, Loader=yaml.SafeLoader)
     return cfg
+
 
 def request_api_key(username, password):
     """
